@@ -9,7 +9,7 @@ const app = express()
 const port = process.env.PORT || 5000
 const uri = process.env.ATLAS_URI
 
-mongoose.connect(process.env.MONGOLAB_PINK_URI || uri, {
+mongoose.connect(process.env.MONGODB_URI || uri, {
     useNewUrlParser: true,
     useCreateIndex: true,
 })
